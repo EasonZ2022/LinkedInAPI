@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--jp@4a31j4(nryiuv1dlqc!r*#5g_ttrtg-cw!yjyhwuji+u$z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['linkedin-api-backend.herokuapp.com', 'localhost']
 
 
 # Application definition
