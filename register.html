@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+
+    <form method = "post" id="form">
+        <div><input type="text" name = "username" id="username" placeholder="Username" required></div>
+        <div><input type="password" name="password" id="password" placeholder="Password" required></div>
+        <div>
+            <input type="password" name="password2" id="password2" placeholder="Confirm password" required>
+            <div id="password_warning">Password does not match!</div>
+        </div>
+        <div><input type="text" name="first_name" id="first_name" placeholder="First name" required></div>
+        <div><input type="text" name="last_name" id="last_name" placeholder="Last name" required></div>
+        <div><input type="email" name="email" id="email" placeholder="E-mail" required></div>
+        <div><input id="register" type="submit" value="Register for free"></div>
+        <div><input type="reset" value="Reset"></div>
+        <!-- <input type="hidden" name="operation" value="register" > -->
+    </form>
+    
+    <p id="loading">Loading...</p>
+    <p id="errors"></p>
+    <p id="display"></p>
+    <a href="/login.html" id="login">Login</a>
+    <a href="/popup.html">back</a>
+    <script src="register.js"></script>
+  </body>
+</html>
