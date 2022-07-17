@@ -23,6 +23,9 @@ changeColor.addEventListener("click", async () => {
   }
 
 function autoLogin() {
+  // clear the temporarily saved LinkedIn profile
+  chrome.storage.sync.remove(["selectedSkills", "selectedExperience", "selectedFullName"], function(){} );  
+
   chrome.storage.sync.get(["authToken"], function(items) {
     if (typeof items.authToken !== 'undefined') {
       location.replace("account.html");
