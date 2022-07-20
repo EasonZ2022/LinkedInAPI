@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Profile, Skill
+from .models import Profile
 from django.contrib.auth.models import User
 from rest_framework.response import Response
 from rest_framework import status
@@ -53,14 +53,14 @@ class RegisterSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ('id', 'fullname', 'owner', 'company1','title1','company2','title2','company3','title3')
+        fields = ('id', 'fullname', 'owner', 'company1','title1','company2','title2','company3','title3','skills')
 
 # class ExperienceSerializer(serializers.ModelSerializer):
 #     class Meta:
 #         model = Experience
 #         fields = ('id', 'company', 'title', 'start_date', 'end_date', 'e_owner')
         
-class SkillSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Skill
-        fields = ('id', 'name', 's_owner')
+# class SkillSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Skill
+#         fields = ('id', 'name', 's_owner')

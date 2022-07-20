@@ -31,6 +31,8 @@ class Profile(models.Model):
     title3 = models.CharField(max_length=200, default=None, blank=True, null=True)
     start_date3 = models.DateField(default=None, blank=True, null=True)
     end_date3 = models.DateField(default=None, blank=True, null=True)
+    
+    skills = models.CharField(max_length=300, default=None, blank=True, null=True)
 
     def __str__(self):
         return self.fullname
@@ -45,9 +47,9 @@ class Profile(models.Model):
 #     def __str__(self):
 #         return self.company+":"+self.title
     
-class Skill(models.Model):
-    name = models.CharField(max_length=200)
-    s_owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
+# class Skill(models.Model):
+#     name = models.CharField(max_length=200)
+#     s_owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
     
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
