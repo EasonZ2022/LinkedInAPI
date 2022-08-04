@@ -6,7 +6,8 @@ const display = document.getElementById("display");
 const password = document.getElementById("password");
 const username = document.getElementById("username");
 
-const url = "http://localhost:8010/proxy";
+const url = "https://linkedin-api-backend.herokuapp.com";
+// const url = "http://localhost:8010/proxy";
 
 loading.style.display = "none";
 display.style.display = "none";

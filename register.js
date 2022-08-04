@@ -12,7 +12,8 @@ const first_name = document.getElementById("first_name");
 const last_name = document.getElementById("last_name");
 const email = document.getElementById("email");
 const register = document.getElementById("register");
-const url = "http://localhost:8010/proxy";
+// const url = "http://localhost:8010/proxy";
+const url = "https://linkedin-api-backend.herokuapp.com";
 
 loading.style.display = "none";
 display.style.display = "none";

@@ -8,7 +8,8 @@ const last_name = document.getElementById("last_name");
 const email = document.getElementById("email");
 const username = document.getElementById("username");
 
-const url = "http://localhost:8010/proxy";
+// const url = "http://localhost:8010/proxy";
+const url = "https://linkedin-api-backend.herokuapp.com";
 
 async function constructAccountDetails() {
     chrome.storage.sync.get(["authToken"], function(items) {
